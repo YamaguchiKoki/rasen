@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//TODO: ベクトル演算16翔やってから
+
 struct Point { double x, y; };
 
 void koch(int n, Point a, Point b) {
