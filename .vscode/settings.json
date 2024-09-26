@@ -1,7 +1,8 @@
 {
   "files.associations": {
-      // skipped
-  },
+    "*.embeddedhtml": "html",
+    "queue": "cpp"
+},
   "C_Cpp.errorSquiggles": "disabled", 
   // skipped
   "C_Cpp.default.cppStandard": "c++17",
