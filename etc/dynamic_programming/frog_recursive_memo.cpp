@@ -22,11 +22,11 @@ long long solve(int n, vector<int> &h, vector<int> &dp) {
     int res = 1e9;
 
     // 足場n-1から来た場合
-    chmin(res, recursive(n-1, h, dp) + abs(h[n] - h[n-1]));
+    chmin(res, solve(n-1, h, dp) + abs(h[n] - h[n-1]));
 
     if (n > 1) {
         // 足場n-2から来た場合
-        chmin(res, recursive(n-2, h, dp) + abs(h[n] - h[n-2]));
+        chmin(res, solve(n-2, h, dp) + abs(h[n] - h[n-2]));
     }
     return dp[n] = res;
 }
